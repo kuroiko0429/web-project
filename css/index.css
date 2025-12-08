@@ -1,0 +1,249 @@
+/* ヒーローセクション */
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 50px,
+      rgba(0, 0, 0, 0.05) 50px,
+      rgba(0, 0, 0, 0.05) 51px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 50px,
+      rgba(0, 0, 0, 0.05) 50px,
+      rgba(0, 0, 0, 0.05) 51px
+    );
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: var(--bg-dark);
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 8vw, 4rem);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.hero p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--bg-dark);
+  color: var(--cream);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 浮遊アイコン */
+.floating-icon {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.3;
+}
+
+.floating-icon img {
+  height: 6rem;
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.section h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--orange);
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--yellow);
+  margin: 1rem auto 0;
+}
+
+/* カード */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--cream);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  background-color: var(--brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.card-image img {
+  height: 5rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card h3 {
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: var(--fg);
+  margin-bottom: 1rem;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--orange);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: var(--red);
+}
+
+/* 特徴セクション */
+.features {
+  background-color: var(--cream);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  margin: 3rem 0;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-icon img {
+  height: 5rem;
+}
+
+.feature-item h3 {
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
+
+/* フッター */
+footer {
+  background-color: var(--bg-dark);
+  color: var(--cream);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  nav {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .hidden {
+    display: none;
+  }
+}

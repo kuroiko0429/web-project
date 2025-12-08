@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fbf1c7;
+  --fg: #3c3836;
+  --bg-dark: #282828;
+  --orange: #d65d0e;
+  --red: #cc241d;
+  --yellow: #d79921;
+  --green: #98971a;
+  --blue: #458588;
+  --brown: #7c6f64;
+  --cream: #ebdbb2;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic",
+    sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  background-color: var(--bg-dark);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--cream);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--yellow);
+}
+
+/* ページヘッダー */
+.page-header {
+  background: linear-gradient(135deg, var(--orange) 0%, var(--red) 100%);
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--bg);
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  opacity: 0.9;
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* フィルター */
+.filter-section {
+  background-color: var(--cream);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.5rem;
+  background-color: var(--bg);
+  border: 2px solid var(--brown);
+  color: var(--fg);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.filter-btn:hover {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--bg);
+}
+
+/* パン屋グリッド */
+.bakery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.bakery-card {
+  background-color: var(--cream);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.bakery-card.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bakery-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bakery-image {
+  width: 100%;
+  height: 200px;
+  background-color: var(--brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.bakery-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--orange);
+  color: var(--bg);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.bakery-content {
+  padding: 1.5rem;
+}
+
+.bakery-title {
+  font-size: 1.5rem;
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
+
+.bakery-subtitle {
+  font-size: 0.9rem;
+  color: var(--brown);
+  margin-bottom: 1rem;
+}
+
+.bakery-description {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.bakery-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-icon {
+  font-size: 1.2rem;
+}
+
+.bakery-features {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.feature-badge {
+  background-color: var(--yellow);
+  color: var(--bg-dark);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.bakery-button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--orange);
+  color: var(--bg);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.bakery-button:hover {
+  background-color: var(--red);
+}
+
+/* フッター */
+footer {
+  background-color: var(--bg-dark);
+  color: var(--cream);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .bakery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
