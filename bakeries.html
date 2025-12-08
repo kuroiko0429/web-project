@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>パン屋一覧 | こぎパン</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/bakeries.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🚲</span>
+        </a>
+        <nav>
+          <a href="index.html">ホーム</a>
+          <a href="bakeries.html">パン屋一覧</a>
+          <a href="cycling.html">サイクリングコース</a>
+          <a href="#contact">お問い合わせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-header">
+      <h1>パン屋一覧</h1>
+      <p>江別の春よ恋を使った、こだわりのパン屋さん</p>
+    </div>
+
+    <main>
+      <div class="filter-section">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">すべて</button>
+          <button class="filter-btn" data-filter="haruyutaka">
+            春よ恋使用
+          </button>
+          <button class="filter-btn" data-filter="direct">製粉所直営</button>
+          <button class="filter-btn" data-filter="natural">天然酵母</button>
+        </div>
+      </div>
+
+      <div class="bakery-grid" id="bakeryGrid">
+        <!-- パン屋カードはJavaScriptで生成 -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 こぎパン Project. All rights reserved.</p>
+      <p>江別市大学プロジェクト</p>
+      <p style="margin-top: 1rem">
+        <a href="#">プライバシーポリシー</a> |
+        <a href="#">サイトマップ</a>
+      </p>
+    </footer>
+    <script src="js/master.js"></script>
+    <script src="js/bakeries.js"></script>
+  </body>
+</html>
