@@ -39,7 +39,8 @@ header {
 
 header.scrolled {
   padding: 0.5rem 1rem;
-  background-color: rgba(40, 40, 40, 0.9);
+  background-color: rgba(40, 40, 40, 0.8);
+  backdrop-filter: blur(10px);
 }
 
 .header-content {
