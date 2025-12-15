@@ -7,4 +7,3 @@ hello to kuroiko
 aaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 aa
-bakaS
