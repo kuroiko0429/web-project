@@ -29,12 +29,17 @@ body {
 /* ヘッダー */
 header {
   background-color: var(--bg-dark);
-  /* background-image: url(../imgs/Gemini_Generated_Image_oamriioamriioamr.png); */
   padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s, background-color 0.3s;
+}
+
+header.scrolled {
+  padding: 0.5rem 1rem;
+  background-color: rgba(40, 40, 40, 0.9);
 }
 
 .header-content {
@@ -56,7 +61,7 @@ header {
 }
 
 .logo-icon img {
-  height: 7rem;
+  height: 4.9rem;
 }
 
 nav {
