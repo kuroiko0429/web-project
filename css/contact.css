@@ -1,115 +1,115 @@
 :root {
-    --contact-light-blue: #67b5ed; /* 薄い青 */
-  }
-  
-  /* ページヘッダーのスタイルを上書き */
-  .page-header {
-    /* 薄い青の背景色を適用 */
-    background-color: var(--contact-light-blue);
-    /* 文字色を濃い色にして見やすくします */
-    color: var(--fg, #3c3836); 
-    /* 上下に大きくパディングを取り、目立つようにします */
-    padding: 4rem 1rem;
-    /* 画像の配置の代わりに、青と白のグラデーションも使えます */
-    /* background: linear-gradient(135deg, var(--contact-light-blue), #ffffff); */
-    text-align: center; /* 中央寄せ */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* 影を少しつけて立体感を出します */
-  }
-  
-  .page-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--contact-main-color); /* タイトルをメインの青色に */
-  }
-  
-  .page-header p {
-    font-size: 1.1rem;
-    opacity: 0.8;
-  }
-  
-.contact-section {
-    max-width: 800px; /* フォームの最大幅を制限 */
-    margin: 2rem auto; /* 中央に配置 */
-    padding: 2rem;
-    background-color: var(--white); /* master.css で定義された変数 */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  .contact-form .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: var(--dark-green); /* master.css で定義された変数 */
-  }
-  
-  .contact-form .required {
-    color: var(--red);
-    font-size: 0.8rem;
-    margin-left: 0.5rem;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid var(--light-gray);
-    border-radius: 5px;
-    box-sizing: border-box; /* paddingを含めたサイズで幅を計算 */
-    font-size: 1rem;
-    transition: border-color 0.3s;
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: var(--main-color); /* master.css で定義された変数 */
-    outline: none;
-  }
-  
-  .contact-form small {
-    display: block;
-    margin-top: 0.25rem;
-    color: var(--gray);
-    font-size: 0.9rem;
-  }
-  
-  .form-actions {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
-  .contact-form .cta-button {
-    /* cta-button は master.css で定義されているはずですが、ここでは中央配置と余白を調整 */
-    padding: 0.75rem 2rem;
-    font-size: 1.1rem;
-  }
-  
-  #formMessage {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  #formMessage.success {
-    background-color: #e6ffe6;
-    color: #008000;
-  }
-  
-  #formMessage.error {
-    background-color: #ffe6e6;
-    color: #ff0000;
-  }
-  
-  .hidden {
-    display: none;
-  }
+  --contact-light-blue: #67b5ed; /* 薄い青 */
+}
 
-  .font-color{
-    color: var(--bg);
-  }
+/* ページヘッダーのスタイルを上書き */
+.page-header {
+  /* 薄い青の背景色を適用 */
+  background-color: var(--contact-light-blue);
+  /* 文字色を濃い色にして見やすくします */
+  color: var(--fg, #3c3836);
+  /* 上下に大きくパディングを取り、目立つようにします */
+  padding: 4rem 1rem;
+  /* 画像の配置の代わりに、青と白のグラデーションも使えます */
+  /* background: linear-gradient(135deg, var(--contact-light-blue), #ffffff); */
+  text-align: center; /* 中央寄せ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* 影を少しつけて立体感を出します */
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--contact-main-color); /* タイトルをメインの青色に */
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.contact-section {
+  max-width: 800px; /* フォームの最大幅を制限 */
+  margin: 2rem auto; /* 中央に配置 */
+  padding: 2rem;
+  background-color: var(--white); /* master.css で定義された変数 */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--dark-green); /* master.css で定義された変数 */
+}
+
+.contact-form .required {
+  color: var(--red);
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  box-sizing: border-box; /* paddingを含めたサイズで幅を計算 */
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--main-color); /* master.css で定義された変数 */
+  outline: none;
+}
+
+.contact-form small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-form .cta-button {
+  /* cta-button は master.css で定義されているはずですが、ここでは中央配置と余白を調整 */
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+}
+
+#formMessage {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#formMessage.success {
+  background-color: #e6ffe6;
+  color: #008000;
+}
+
+#formMessage.error {
+  background-color: #ffe6e6;
+  color: #ff0000;
+}
+
+.hidden {
+  display: none;
+}
+
+.font-color {
+  color: var(--bg);
+}
