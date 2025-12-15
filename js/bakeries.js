@@ -10,7 +10,7 @@ const bakeries = [
     hours: "8:00 - 18:00",
     closed: "月曜日",
     features: ["春よ恋100%", "イートイン", "駐輪場"],
-    categories: ["haruyutaka", "direct"],
+    categories: ["nopporo"],
     mapUrl: "#",
   },
   {
@@ -24,7 +24,7 @@ const bakeries = [
     hours: "7:00 - 19:00",
     closed: "水曜日",
     features: ["春よ恋使用", "予約可", "テイクアウト"],
-    categories: ["haruyutaka"],
+    categories: ["nopporo"],
     mapUrl: "#",
   },
   {
@@ -38,7 +38,7 @@ const bakeries = [
     hours: "9:00 - 17:00",
     closed: "火・木曜日",
     features: ["天然酵母", "オーガニック", "カフェ併設"],
-    categories: ["natural"],
+    categories: ["nopporo"],
     mapUrl: "#",
   },
   {
@@ -52,7 +52,7 @@ const bakeries = [
     hours: "10:00 - 18:00",
     closed: "日曜日",
     features: ["石窯焼き", "春よ恋使用", "ワークショップ"],
-    categories: ["haruyutaka"],
+    categories: ["nopporo"],
     mapUrl: "#",
   },
   {
@@ -66,7 +66,7 @@ const bakeries = [
     hours: "8:30 - 19:30",
     closed: "不定休",
     features: ["春よ恋100%", "キッズスペース", "駐車場"],
-    categories: ["haruyutaka"],
+    categories: ["nopporo"],
     mapUrl: "#",
   },
   {
@@ -80,7 +80,7 @@ const bakeries = [
     hours: "7:30 - 18:30",
     closed: "木曜日",
     features: ["地産地消", "惣菜パン充実", "配達サービス"],
-    categories: [],
+    categories: ["nopporo"],
     mapUrl: "#",
   },
   {
@@ -94,7 +94,7 @@ const bakeries = [
     hours: "9:00 - 18:00",
     closed: "月・火曜日",
     features: ["創作パン", "春よ恋使用", "季節限定"],
-    categories: ["haruyutaka"],
+    categories: ["nopporo"],
     mapUrl: "#",
   },
   {
@@ -108,7 +108,7 @@ const bakeries = [
     hours: "10:00 - 17:00",
     closed: "月・水・金曜日",
     features: ["春よ恋100%", "限定商品", "工場見学可"],
-    categories: ["haruyutaka", "direct"],
+    categories: ["nopporo"],
     mapUrl: "#",
   },
 ];
