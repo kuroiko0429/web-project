@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
   overflow: hidden;
 }
