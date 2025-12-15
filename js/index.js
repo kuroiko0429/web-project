@@ -30,12 +30,12 @@ anime({
 anime({
   targets: ".floating-icon",
   translateY: [
-    { value: -20, duration: 2000 },
+    { value: -50, duration: 2000 },
     { value: 0, duration: 2000 },
   ],
   rotate: [
-    { value: 5, duration: 2000 },
-    { value: -5, duration: 2000 },
+    { value: 15, duration: 2000 },
+    { value: 0, duration: 2000 },
   ],
   easing: "easeInOutSine",
   loop: true,
