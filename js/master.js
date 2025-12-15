@@ -76,4 +76,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // ハンバーガーメニュー
+  const hamburger = document.querySelector(".hamburger-menu");
+  const nav = document.querySelector("nav");
+  if (hamburger && nav) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("is-active");
+      nav.classList.toggle("is-active");
+    });
+  }
 });
