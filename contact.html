@@ -6,12 +6,15 @@
     <title>お問い合わせ | こぎパン</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link rel="stylesheet" href="css/master.css" />
-    <link rel="stylesheet" href="css/contact.css" /> </head>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
   <body>
     <header>
       <div class="header-content">
         <a href="index.html" class="logo">
-          <span class="logo-icon">📧</span>
+          <span class="logo-icon"
+            ><img src="imgs/kogipanrogo.png" alt=""
+          /></span>
         </a>
         <nav>
           <a href="index.html">ホーム</a>
@@ -23,10 +26,12 @@
     </header>
 
     <div class="page-header">
-        <div class="font-color">
-            <h1>お問い合わせ</h1>
-            <p>こぎパンに関するご質問、ご意見、コラボレーションのご提案などはこちらから</p>
-    </div>
+      <div class="font-color">
+        <h1>お問い合わせ</h1>
+        <p>
+          こぎパンに関するご質問、ご意見、コラボレーションのご提案などはこちらから
+        </p>
+      </div>
     </div>
     <main>
       <section class="contact-section">
@@ -36,7 +41,9 @@
             <input type="text" id="name" name="name" required />
           </div>
           <div class="form-group">
-            <label for="email">メールアドレス <span class="required">必須</span></label>
+            <label for="email"
+              >メールアドレス <span class="required">必須</span></label
+            >
             <input type="email" id="email" name="email" required />
             <small>返信は上記アドレス宛に送信されます。</small>
           </div>
@@ -45,7 +52,9 @@
             <input type="text" id="subject" name="subject" required />
           </div>
           <div class="form-group">
-            <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+            <label for="message"
+              >お問い合わせ内容 <span class="required">必須</span></label
+            >
             <textarea id="message" name="message" rows="8" required></textarea>
           </div>
           <div class="form-actions">
@@ -66,5 +75,6 @@
     </footer>
 
     <script src="js/master.js"></script>
-    <script src="js/contact.js"></script> </body>
+    <script src="js/contact.js"></script>
+  </body>
 </html>
