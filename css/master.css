@@ -132,6 +132,7 @@ footer a {
   nav.is-active {
     display: flex;
     opacity: 1;
+    backdrop-filter: blur(10px);
   }
 
   nav a {
