@@ -62,11 +62,6 @@ header.scrolled {
 
 .logo-icon img {
   height: 7rem;
-  transition: height 0.3s;
-}
-
-header.scrolled .logo-icon img {
-  height: 4rem;
 }
 
 nav {
