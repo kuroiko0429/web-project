@@ -2,7 +2,7 @@ const bakeries = [
   {
     name: "菓子工房　笑くぼ",
     subtitle: "仮タイトル",
-    icon: "🏭",
+    image: "imgs/ekubo.jpg",
     tag: "仮タグ",
     description:
       "障がいをもつ方の自立支援をサポートしているの菓子工房です。道産小麦を使ったお菓子やベーグル・ケーキなどの販売を行っています。",
