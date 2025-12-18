@@ -16,7 +16,7 @@ const bakeries = [
   {
     name: "Cinnamon Bakery（シナモンベーカリー）",
     subtitle: "小麦の味を楽しむパン",
-    icon: "🌾",
+    icon: "imgs/",
     tag: "人気店",
     description:
       "デニッシュ系のパンやキッシュなどの珍しいパンを取り扱っているお店です。",
@@ -30,7 +30,7 @@ const bakeries = [
   {
     name: "低糖質専門店 niros bake（ニロズベイク）",
     subtitle: "天然酵母のこだわり",
-    icon: "🥐",
+    icon: "imgs/",
     tag: "天然酵母",
     description:
       "低糖質で美味しいバーガーやお菓子、お弁当などを扱っており、糖質の記載がされているので糖質制限中の方にはもってこいのお店です。",
@@ -44,7 +44,7 @@ const bakeries = [
   {
     name: "Pasco 夢パン工房 野幌店",
     subtitle: "石窯焼きの本格派",
-    icon: "🧱",
+    icon: "imgs/",
     tag: "石窯焼き",
     description:
       "北海道産小麦にこだわったお店です。定番の「超熟」から野幌店限定の商品まで幅広く取りそろえられています。",
@@ -58,7 +58,7 @@ const bakeries = [
   {
     name: "Bakery Nire Kaze（ベーカリー ニレカゼ）",
     subtitle: "家族で楽しめるパン屋",
-    icon: "🏠",
+    icon: "imgs/",
     tag: "ファミリー",
     description:
       "ハード系のパンを多く取り扱っているパン屋です。北海道産小麦を使っており、スコーンなどのメニューも取り扱っています。",
@@ -72,7 +72,7 @@ const bakeries = [
   {
     name: "Picco Bakery（ピッコ ベーカリー）",
     subtitle: "地産地消のこだわり",
-    icon: "🌱",
+    icon: "imgs/",
     tag: "地産地消",
     description:
       "道産小麦を使ったパンで様々な種類のパンがあり、プチパンなどの小さめなパンやボリュームのあるパンまであります。",
@@ -86,7 +86,7 @@ const bakeries = [
   {
     name: "ブランジェール　ラパン",
     subtitle: "伝統と革新のハーモニー",
-    icon: "🎨",
+    icon: "imgs/",
     tag: "創作パン",
     description:
       "江別産の小麦と北海道産の食材にこだわったパンや食パンのフレーバーを多く取り扱うお店です。",
@@ -100,7 +100,7 @@ const bakeries = [
   {
     name: "ほっぺぱん",
     subtitle: "製粉所のもう一つの顔",
-    icon: "⚙️",
+    icon: "imgs/",
     tag: "直営店",
     description:
       "コッペパンに好きな具材を挟んで購入できるため、好みのパンにできます。ボリューム満点で美味しいです。",
