@@ -2,7 +2,7 @@ const bakeries = [
   {
     name: "菓子工房　笑くぼ",
     subtitle: "仮タイトル",
-    image: "imgs/ekubo.jpg",
+    icon: "imgs/ekubo.jpg",
     tag: "仮タグ",
     description:
       "障がいをもつ方の自立支援をサポートしているの菓子工房です。道産小麦を使ったお菓子やベーグル・ケーキなどの販売を行っています。",
@@ -121,7 +121,7 @@ function createBakeryCard(bakery) {
 
   card.innerHTML = `
                 <div class="bakery-image">
-                    ${bakery.icon}
+                    <img src="${bakery.icon}" alt="${bakery.name}">
                     <div class="bakery-tag">${bakery.tag}</div>
                 </div>
                 <div class="bakery-content">
