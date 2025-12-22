@@ -138,7 +138,7 @@ const bakeries = [
     closed: "基本的に無し",
     features: ["ハルユタカ使用",  "テイクアウト可", "駐車場", "予約可", "季節限定",],
     categories: ["ebetu"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/X93Sru5Bhgz9LzwNA",
   },
   {
     name: "Croissant Factory MIL",
