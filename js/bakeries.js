@@ -251,7 +251,7 @@ const bakeries = [
     closed: "火曜日.水曜日",
     features: ["ハルユタカ使用",  "テイクアウト可", "駐車場", "予約可", "季節限定"],
     categories: ["ooasa"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/Wda8EbxMD4D6ook98",
   },
   {
     name: "パン工房 あさのわ",
