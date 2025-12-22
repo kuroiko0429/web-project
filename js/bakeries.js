@@ -53,7 +53,7 @@ const bakeries = [
     closed: "基本的に無し",
     features: ["ハルユタカ使用", "テイクアウト可", "イートイン・カフェ", "駐車場", "石窯焼き", "季節限定", "予約可"],
     categories: ["nopporo"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/dmYjv8ZL7vAvaQjV7",
   },
   {
     name: "Bakery Nire Kaze（ベーカリー ニレカゼ）",
