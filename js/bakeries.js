@@ -25,7 +25,7 @@ const bakeries = [
     closed: "月曜日.火曜日",
     features: ["ハルユタカ使用", "テイクアウト可", "駐車場", "季節限定", "予約可"],
     categories: ["nopporo"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/bRjyzuvMk64uGJ1U6",
   },
   {
     name: "低糖質専門店 niros bake（ニロズベイク）",
