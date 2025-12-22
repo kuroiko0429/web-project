@@ -39,7 +39,7 @@ const bakeries = [
     closed: "月曜日.火曜日.水曜日.木曜日.金曜日.日曜日",
     features: ["テイクアウト可", "予約可", "季節限定", "カフェ"],
     categories: ["nopporo"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/quXRjcNMG2dY2xYF9",
   },
   {
     name: "Pasco 夢パン工房 野幌店",
