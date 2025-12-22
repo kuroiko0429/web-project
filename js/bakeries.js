@@ -152,7 +152,7 @@ const bakeries = [
     closed: "月曜日.金曜日",
     features: ["ハルユタカ使用",  "テイクアウト可", "駐車場", "予約可", "季節限定",],
     categories: ["ebetu"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/QBQtLY3HrMsEZBe57",
   },
   {
     name: "ドルチェ&ベーカリーカフェ Amam",
