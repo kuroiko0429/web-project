@@ -30,7 +30,7 @@ const bakeries = [
   {
     name: "低糖質専門店 niros bake（ニロズベイク）",
     subtitle: "天然酵母のこだわり",
-    icon: "imgs/",
+    icon: "imgs/nirozubeiku.jpg",
     tag: "天然酵母",
     description:
       "低糖質で美味しいバーガーやお菓子、お弁当などを扱っており、糖質の記載がされているので糖質制限中の方にはもってこいのお店です。",
