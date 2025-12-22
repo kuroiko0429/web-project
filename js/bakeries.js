@@ -11,7 +11,7 @@ const bakeries = [
     closed: "日曜日.祝日",
     features: ["ハルユタカ使用", "天然酵母", "テイクアウト可", "イートイン・カフェ", "配達サービス", "季節限定"],
     categories: ["nopporo"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/CjNo5X76JKL1yAhV9",
   },
   {
     name: "Cinnamon Bakery（シナモンベーカリー）",
