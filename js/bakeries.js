@@ -140,6 +140,20 @@ const bakeries = [
     categories: ["ebetu"],
     mapUrl: "#",
   },
+  {
+    name: "ODD BAKERY",
+    subtitle: "「少しの特別（ODD）」を添える、洗練されたパン",
+    icon: "imgs/odd.jpg",
+    tag: "日常",
+    description:
+      "サクサク食感のクロワッサンやデニッシュ、そして江別産小麦の甘みを引き出した食パンは、一度食べると虜になるファンが続出しています。",
+    address: "〒067-0005 北海道江別市牧場町１４−１",
+    hours: "10:00 - 20:00",
+    closed: "基本的に無し",
+    features: ["ハルユタカ使用",  "テイクアウト可", "駐車場", "予約可", "季節限定",],
+    categories: ["ebetu"],
+    mapUrl: "#",
+  },
 ];
 
 // パン屋カードを生成する関数
