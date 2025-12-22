@@ -70,6 +70,17 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.cta-button.pan {
+  background-color: var(--orange);
+  color: var(--bg-dark);
+  margin-right: 1rem;
+}
+
+.cta-button.cycle {
+  background-color: var(--yellow);
+  color: var(--bg-dark);
+}
+
 /* 浮遊アイコン */
 .floating-icon {
   position: absolute;
