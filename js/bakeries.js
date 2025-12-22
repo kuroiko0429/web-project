@@ -95,7 +95,7 @@ const bakeries = [
     closed: "日曜日",
     features: ["ハルユタカ使用", "テイクアウト可", "駐車場", "予約可", "季節限定"],
     categories: ["nopporo"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/gKqGdr4oGytfoR5T9",
   },
   {
     name: "ほっぺぱん",
