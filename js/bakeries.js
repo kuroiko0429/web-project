@@ -223,7 +223,7 @@ const bakeries = [
     closed: "基本的に無し",
     features: ["ハルユタカ使用",  "テイクアウト可", "イートイン・カフェ", "駐車場", "キッズスペース", "季節限定"],
     categories: ["ooasa"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/V8ZwXdDs1ZdiHbVS9",
   },
   {
     name: "ぱん屋ねこのさんぽ",
