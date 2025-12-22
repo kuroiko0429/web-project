@@ -166,7 +166,7 @@ const bakeries = [
     closed: "火曜日",
     features: ["ハルユタカ使用",  "テイクアウト可", "イートイン・カフェ", "駐車場", "予約可", "季節限定"],
     categories: ["ebetu"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/xQbUCd1GzNdyqFg7A",
   },
   {
     name: "flamme! (フラム)",
