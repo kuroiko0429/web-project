@@ -265,7 +265,7 @@ const bakeries = [
     closed: "火曜日",
     features: ["ハルユタカ使用",  "テイクアウト可", "駐車場", "予約可", "石窯焼き（薪窯）", "天然酵母", "季節限定"],
     categories: ["ooasa"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/HUaLr4yqLtS6PqDD8",
   },
 ];
 
