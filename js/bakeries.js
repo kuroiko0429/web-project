@@ -81,7 +81,7 @@ const bakeries = [
     closed: "水曜日",
     features: ["ハルユタカ使用", "駐車場", "予約可", "季節限定/限定メニュー"],
     categories: ["nopporo"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/A26vu3Rb6UqMAtVQ6",
   },
   {
     name: "ブランジェール　ラパン",
