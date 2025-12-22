@@ -1,7 +1,7 @@
 const bakeries = [
   {
     name: "菓子工房　笑くぼ",
-    subtitle: "北海道の大地が香る、道産小麦100%の優しい甘み",
+    subtitle: "北海道の大地が香る、<br>道産小麦100%の優しい甘み",
     icon: "imgs/ekubo.jpg",
     tag: "道産小麦",
     description:
@@ -21,7 +21,7 @@ const bakeries = [
     mapUrl: "https://maps.app.goo.gl/CjNo5X76JKL1yAhV9",
   },
   {
-    name: "Cinnamon Bakery（シナモンベーカリー）",
+    name: "Cinnamon Bakery<br>（シナモンベーカリー）",
     subtitle: "小麦の味を楽しむパン",
     icon: "imgs/sinamon.jpg",
     tag: "人気店",
@@ -41,7 +41,7 @@ const bakeries = [
     mapUrl: "https://maps.app.goo.gl/bRjyzuvMk64uGJ1U6",
   },
   {
-    name: "低糖質専門店 niros bake（ニロズベイク）",
+    name: "低糖質専門店 niros bake<br>（ニロズベイク）",
     subtitle: "天然酵母のこだわり",
     icon: "imgs/nirozubeiku.jpg",
     tag: "天然酵母",
@@ -77,7 +77,7 @@ const bakeries = [
     mapUrl: "https://maps.app.goo.gl/dmYjv8ZL7vAvaQjV7",
   },
   {
-    name: "Bakery Nire Kaze（ベーカリー ニレカゼ）",
+    name: "Bakery Nire Kaze<br>（ベーカリー ニレカゼ）",
     subtitle: "家族で楽しめるパン屋",
     icon: "imgs/nirekaze.jpg",
     tag: "ファミリー",
@@ -97,7 +97,7 @@ const bakeries = [
     mapUrl: "https://maps.app.goo.gl/UcAyfLttTeJRBqdV6",
   },
   {
-    name: "Picco Bakery（ピッコ ベーカリー）",
+    name: "Picco Bakery<br>（ピッコ ベーカリー）",
     subtitle: "地産地消のこだわり",
     icon: "imgs/pikko.jpg",
     tag: "地産地消",
@@ -152,7 +152,7 @@ const bakeries = [
   },
   {
     name: "MARURI bread & cafe",
-    subtitle: "素敵な庭を眺めながら過ごせる、隠れ家パンカフェ",
+    subtitle: "素敵な庭を眺めながら過ごせる、<br>隠れ家パンカフェ",
     icon: "imgs/marui.jpg",
     tag: "隠れ家",
     description:
@@ -174,7 +174,7 @@ const bakeries = [
 
   {
     name: "ODD BAKERY",
-    subtitle: "「少しの特別（ODD）」を添える、洗練されたパン",
+    subtitle: "「少しの特別（ODD）」を添える、<br>洗練されたパン",
     icon: "imgs/odd.jpg",
     tag: "日常",
     description:
@@ -213,8 +213,8 @@ const bakeries = [
     mapUrl: "https://maps.app.goo.gl/QBQtLY3HrMsEZBe57",
   },
   {
-    name: "ドルチェ&ベーカリーカフェ Amam",
-    subtitle: "江別の赤レンガで楽しむ、贅沢パンランチとスイーツ",
+    name: "ドルチェ&ベーカリーカフェ<br> Amam",
+    subtitle: "江別の赤レンガで楽しむ、<br>贅沢パンランチとスイーツ",
     icon: "imgs/dorutye.jpg",
     tag: "手土産",
     description:
@@ -235,7 +235,7 @@ const bakeries = [
   },
   {
     name: "flamme! (フラム)",
-    subtitle: "薪火の香りに包まれる、本格ハードパンと料理の店",
+    subtitle: "薪火の香りに包まれる、<br>本格ハードパンと料理の店",
     icon: "imgs/fulam.jpg",
     tag: "薪窯",
     description:
@@ -298,7 +298,8 @@ const bakeries = [
 
   {
     name: "どんぐり 大麻店",
-    subtitle: "焼きたて・揚げたて・作りたて！札幌圏最強のパンのテーマパーク",
+    subtitle:
+      "焼きたて・揚げたて・作りたて！<br>札幌圏最強のパンのテーマパーク",
     icon: "imgs/donguri.jpg",
     tag: "家族",
     description:
@@ -319,7 +320,7 @@ const bakeries = [
   },
   {
     name: "ぱん屋ねこのさんぽ",
-    subtitle: "猫モチーフに癒やされる、優しさあふれる街のパン屋",
+    subtitle: "猫モチーフに癒やされる、<br>優しさあふれる街のパン屋",
     icon: "imgs/neko.jpg",
     tag: "江別産・道産小麦",
     description:
@@ -339,7 +340,7 @@ const bakeries = [
   },
   {
     name: "パン屋 Sora",
-    subtitle: "毎日食べたい、ふんわり優しい「空」のようなパン",
+    subtitle: "毎日食べたい、<br>ふんわり優しい「空」のようなパン",
     icon: "imgs/sora.jpg",
     tag: "絶品",
     description:
