@@ -16,7 +16,7 @@ const bakeries = [
   {
     name: "Cinnamon Bakery（シナモンベーカリー）",
     subtitle: "小麦の味を楽しむパン",
-    icon: "img/sinamon.jpg",
+    icon: "imgs/sinamon.jpg",
     tag: "人気店",
     description:
       "デニッシュ系のパンやキッシュなどの珍しいパンを取り扱っているお店です。",
