@@ -237,7 +237,7 @@ const bakeries = [
     closed: "水曜日.木曜日",
     features: ["ハルユタカ使用",  "テイクアウト可", "駐車場", "予約可", "季節限定"],
     categories: ["ooasa"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/YEgrge3pw9Xo8AiJ8",
   },
   {
     name: "パン屋 Sora",
