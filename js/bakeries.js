@@ -194,7 +194,7 @@ const bakeries = [
     closed: "月曜日.日曜日",
     features: ["ハルユタカ使用",  "テイクアウト可", "駐車場", "予約可", "季節限定"],
     categories: ["ebetu"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/M7p6ZpztbDNPCUm3A",
   },
   {
     name: "ベーカリーもみの木",
