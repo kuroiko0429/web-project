@@ -67,7 +67,7 @@ const bakeries = [
     closed: "火曜日.水曜日",
     features: ["ハルユタカ使用", "テイクアウト可", "予約可", "駐車場", "季節限定"],
     categories: ["nopporo"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/UcAyfLttTeJRBqdV6",
   },
   {
     name: "Picco Bakery（ピッコ ベーカリー）",
