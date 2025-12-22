@@ -168,6 +168,20 @@ const bakeries = [
     categories: ["ebetu"],
     mapUrl: "#",
   },
+  {
+    name: "flamme! (フラム)",
+    subtitle: "薪火の香りに包まれる、本格ハードパンと料理の店",
+    icon: "imgs/fulam.jpg",
+    tag: "薪窯",
+    description:
+      "焼きたてパンをお店自慢の薪火料理と一緒にその場で楽しめる、贅沢な体験が可能です。",
+    address: "〒067-0066 北海道江別市ゆめみ野南町2−２０",
+    hours: "10:00 - 15:00",
+    closed: "月曜日.火曜日.水曜日.木曜日",
+    features: ["ハルユタカ使用",  "テイクアウト可", "イートイン・カフェ", "駐車場", "予約可", "石窯焼き（薪窯）", "季節限定"],
+    categories: ["ebetu"],
+    mapUrl: "#",
+  },
 ];
 
 // パン屋カードを生成する関数
