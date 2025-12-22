@@ -180,7 +180,7 @@ const bakeries = [
     closed: "月曜日.火曜日.水曜日.木曜日",
     features: ["ハルユタカ使用",  "テイクアウト可", "イートイン・カフェ", "駐車場", "予約可", "石窯焼き（薪窯）", "季節限定"],
     categories: ["ebetu"],
-    mapUrl: "#",
+    mapUrl: "https://maps.app.goo.gl/Chy6uWcFFUZjH7oN7",
   },
   {
     name: "FATE BAKE",
