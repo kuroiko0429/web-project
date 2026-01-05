@@ -174,7 +174,7 @@ const bakeries = [
 
   {
     name: "ODD BAKERY",
-    subtitle: "「少しの特別（ODD）」を添える、<br>洗練されたパン",
+    subtitle: "毎日食べても飽きない、<br>洗練されたパン",
     icon: "imgs/odd.jpg",
     tag: "日常",
     description:
