@@ -78,7 +78,11 @@ main {
   transition: all 0.3s;
   opacity: 0;
   transform: scale(0.9);
-  height: 815px;
+  height: 815px; /* 固定高さ */
+  
+  /* 修正: カード全体を縦のFlexコンテナにする */
+  display: flex;
+  flex-direction: column;
 }
 
 .bakery-card.show {
@@ -119,6 +123,10 @@ main {
 
 .bakery-content {
   padding: 1.5rem;
+  /* 修正: コンテンツエリアを可変にし、ボタンを下へ押し出す */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .bakery-title {
@@ -177,8 +185,6 @@ main {
 .bakery-button {
   display: inline-block;
   width: 100%;
-  height: auto;
-  margin-bottom: auto;
   padding: 0.8rem;
   background-color: var(--orange);
   color: var(--bg);
@@ -187,6 +193,9 @@ main {
   border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.3s;
+  
+  /* 修正: 上部に自動余白を持たせて最下部に配置 */
+  margin-top: auto;
 }
 
 .bakery-button:hover {
@@ -197,6 +206,12 @@ main {
 @media (max-width: 768px) {
   .bakery-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* スマホ版では高さ固定を解除すると見やすくなります（必要に応じて） */
+  .bakery-card {
+    height: auto;
+    min-height: 750px;
   }
 
   nav {
