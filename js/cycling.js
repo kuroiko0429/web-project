@@ -1,11 +1,28 @@
 // サイクリングコースデータ（ここに追加・編集するだけで簡単に管理できます）
 const courses = [
   {
-    name: "ともや",
+    name: "超入門こぎパン",
+    subtitle: "初めまして。こぎパン",
+    level: "初心者",
+    levelClass: "beginner",
+    distance: 2,
+    duration: 30,
+    elevation: 10,
+    description:
+      "サイクリングを始めるにあたって最初の門。野幌市街地の短いコースでパンを楽しめます。",
+    highlights: [
+      "初心者",
+      "写真スポット多数",
+    ],
+    tags: ["初心者向け", "市街地", "短距離"],
+    distanceClass: "short",
+  },
+  {
+    name: "50cc easyコース",
     subtitle: "市街地をゆったり巡る",
     level: "初心者",
     levelClass: "beginner",
-    distance: 8.5,
+    distance: 4,
     duration: 45,
     elevation: 20,
     description:
@@ -37,25 +54,6 @@ const courses = [
     ],
     tags: ["中級者向け", "川沿い", "絶景", "中距離"],
     distanceClass: "medium",
-  },
-  {
-    name: "小麦畑を巡る 春よ恋コース",
-    subtitle: "小麦の産地を体感する",
-    level: "初心者",
-    levelClass: "beginner",
-    distance: 12.5,
-    duration: 60,
-    elevation: 35,
-    description:
-      "江別の小麦畑エリアを巡るコース。「春よ恋」が育つ畑を見学しながら、製粉所直営のパン屋を中心に3軒を訪問します。",
-    highlights: [
-      "小麦畑の風景を満喫",
-      "製粉所見学可能",
-      "春よ恋使用パン屋3軒",
-      "写真スポット多数",
-    ],
-    tags: ["初心者向け", "小麦畑", "製粉所", "短距離"],
-    distanceClass: "short",
   },
   {
     name: "野幌森林公園 自然満喫コース",
