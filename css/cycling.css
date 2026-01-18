@@ -165,6 +165,10 @@ main {
 
 .course-content {
   padding: 1.5rem;
+  /* 修正: コンテンツエリアを可変にし、ボタンを下へ押し出す */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .course-description {
@@ -259,6 +263,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
+  margin-top: auto;
 }
 
 .course-btn {

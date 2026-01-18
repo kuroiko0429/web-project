@@ -415,13 +415,13 @@ function createBakeryCard(bakery) {
                         ${bakery.features
                           .map(
                             (feature) =>
-                              `<span class="feature-badge">${feature}</span>`
+                              `<span class="feature-badge">${feature}</span>`,
                           )
                           .join("")}
                     </div>
                     <a href="${
                       bakery.mapUrl
-                    }" class="bakery-button">ルートマップで見る</a>
+                    }" class="bakery-button">マップで見る</a>
                 </div>
             `;
 
