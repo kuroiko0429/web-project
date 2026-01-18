@@ -1,4 +1,4 @@
-/* ページヘッダー */
+/* --- ページヘッダー --- */
 .page-header {
   background: linear-gradient(135deg, var(--orange) 0%, var(--red) 100%);
   padding: 3rem 1rem;
@@ -16,14 +16,14 @@
   opacity: 0.9;
 }
 
-/* メインコンテンツ */
+/* --- メインコンテンツ --- */
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 1rem;
 }
 
-/* フィルター */
+/* --- フィルター --- */
 .filter-section {
   background-color: var(--cream);
   padding: 1.5rem;
@@ -49,25 +49,20 @@ main {
   font-weight: bold;
 }
 
-.filter-btn:hover {
+.filter-btn:hover, .filter-btn.active {
   background-color: var(--orange);
   border-color: var(--orange);
   color: var(--bg);
   transform: translateY(-2px);
 }
 
-.filter-btn.active {
-  background-color: var(--orange);
-  border-color: var(--orange);
-  color: var(--bg);
-}
-
-/* パン屋グリッド */
+/* --- パン屋グリッド --- */
 .bakery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  align-items: stretch;
 }
 
 .bakery-card {
@@ -78,11 +73,9 @@ main {
   transition: all 0.3s;
   opacity: 0;
   transform: scale(0.9);
-  height: 815px; /* 固定高さ */
-  
-  /* 修正: カード全体を縦のFlexコンテナにする */
   display: flex;
   flex-direction: column;
+  height: 100%; 
 }
 
 .bakery-card.show {
@@ -90,11 +83,7 @@ main {
   transform: scale(1);
 }
 
-.bakery-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
+/* 写真の位置：変更なし */
 .bakery-image {
   width: 100%;
   height: 200px;
@@ -121,71 +110,89 @@ main {
   font-weight: bold;
 }
 
+/* --- 店名より下のコンテンツ配置 --- */
 .bakery-content {
   padding: 1.5rem;
-  /* 修正: コンテンツエリアを可変にし、ボタンを下へ押し出す */
-  flex: 1;
+  flex: 1; 
   display: flex;
   flex-direction: column;
 }
 
+/* 店名：2行になってもラインが崩れないよう高さを確保 */
 .bakery-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--orange);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+  min-height: 3.5rem; 
+  display: flex;
+  align-items: center;
 }
 
 .bakery-subtitle {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--brown);
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
+/* 説明文：短くてもinfoとbuttonを押し下げる役割 */
 .bakery-description {
   font-size: 0.95rem;
-  margin-bottom: 1rem;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* 余白を埋めてinfoを下へ送る */
 }
 
+/* 住所・時間・定休日：枠を消して整列を強化 */
 .bakery-info {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px dashed rgba(0,0,0,0.1); /* 軽い点線で区切る */
 }
 
 .info-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: grid;
+  /* アイコン幅を1.6remで固定。テキストの左端が一直線に揃う */
+  grid-template-columns: 1.6rem 1fr;
+  align-items: flex-start;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--fg);
 }
 
 .info-icon {
-  font-size: 1.2rem;
+  text-align: left; /* アイコンを左側に寄せる */
+  font-size: 1rem;
 }
 
+/* 特徴タグ（features） */
 .bakery-features {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  min-height: 3.5rem; /* ボタンの位置を全カードで統一 */
+  align-content: flex-start;
 }
 
 .feature-badge {
   background-color: var(--yellow);
-  color: var(--bg-dark);
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
+  color: #5d4037;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 
-/* パン屋のボタンを下に揃える */
+/* ボタン：常にカードの最下部 */
 .bakery-button {
-  display: inline-block;
+  display: block;
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.9rem;
   background-color: var(--orange);
   color: var(--bg);
   text-align: center;
@@ -193,9 +200,7 @@ main {
   border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.3s;
-  
-  /* 修正: 上部に自動余白を持たせて最下部に配置 */
-  margin-top: auto;
+  margin-top: auto; 
 }
 
 .bakery-button:hover {
@@ -207,15 +212,10 @@ main {
   .bakery-grid {
     grid-template-columns: 1fr;
   }
-
-  /* スマホ版では高さ固定を解除すると見やすくなります（必要に応じて） */
   .bakery-card {
     height: auto;
-    min-height: 750px;
   }
-
-  nav {
-    gap: 0.8rem;
-    font-size: 0.85rem;
+  .bakery-title, .bakery-features {
+    min-height: auto;
   }
 }
